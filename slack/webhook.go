@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"strings"
 )
@@ -20,8 +19,6 @@ func PostToWebhookWithClient(client *http.Client, url string, message Message) e
 	if err != nil {
 		return err
 	}
-
-	log.Println(string(messageJSON))
 
 	resp, err := client.Post(url, "application/json", strings.NewReader(string(messageJSON)))
 	if err != nil {
