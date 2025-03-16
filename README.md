@@ -49,3 +49,5 @@ func main() {
 That code will result in the following being posted to Slack:
 
 ![Screenshot of sent message](./example.png)
+
+For more formatting options, refer to the [blocks reference](https://api.slack.com/reference/block-kit/blocks) and [Block Kit Builder](https://app.slack.com/block-kit-builder).
