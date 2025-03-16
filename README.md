@@ -1,6 +1,8 @@
 # slack-go
 A (very simple) Go library for posting messages to incoming webhooks in Slack.
 
+You will need to set up a Slack App with an incoming webhook URL; see the [developer documentation](https://api.slack.com/messaging/webhooks#getting_started) for details.
+
 ## Example
 ```go
 package main
@@ -43,3 +45,7 @@ func main() {
 	}
 }
 ```
+
+That code will result in the following being posted to Slack:
+
+![Screenshot of sent message](./example.png)
